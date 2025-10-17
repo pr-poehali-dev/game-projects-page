@@ -24,18 +24,11 @@ const projects = [
     color: "from-cyan-400 to-blue-600"
   },
   {
-    id: "diamond-empire",
-    name: "Diamond Empire",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
-    description: "Строй империю из алмазов и драгоценностей!",
-    fullDescription: "Создай свою бизнес-империю, торгуй редкими алмазами, расширяй производство и становись самым богатым магнатом в мире драгоценностей.",
-    stats: {
-      downloads: "2.1M",
-      rating: 4.7,
-      revenue: "$520K"
-    },
-    features: ["Стратегия развития", "Торговая система", "Кланы и альянсы"],
-    color: "from-purple-400 to-pink-600"
+    id: "daddy",
+    name: "Daddy",
+    logo: "https://cdn.poehali.dev/files/69490964-7943-4b6e-bac6-d56e19906d8f.png",
+    description: "Казино с уникальными бонусами и турнирами!",
+    color: "from-purple-500 to-violet-600"
   },
   {
     id: "gold-miner",
