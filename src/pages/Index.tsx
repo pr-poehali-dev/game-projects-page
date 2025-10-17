@@ -132,11 +132,7 @@ const Index = () => {
           ))}
         </div>
 
-        <div className="text-center mt-8 md:mt-12 flex items-center justify-center gap-2 text-amber-200/60 px-4">
-          <Icon name="Sparkles" size={18} className="text-amber-400 animate-pulse" />
-          <p className="text-xs md:text-sm">Создано с помощью poehali.dev</p>
-          <Icon name="Sparkles" size={18} className="text-amber-400 animate-pulse" />
-        </div>
+
       </div>
     </div>
   );
