@@ -132,18 +132,18 @@ const Index = () => {
                         />
                       </div>
 
-                      <div className="flex-1 space-y-4 md:space-y-6 w-full">
+                      <div className="flex-1 space-y-4 md:space-y-6 w-full flex flex-col justify-between">
                         <div className="text-center md:text-left">
                           <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">{project.name}</h2>
                           <p className="text-base md:text-lg text-amber-200/80">{project.description}</p>
                         </div>
+                        
+                        <button className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
+                          <Icon name="Play" size={20} />
+                          Играть
+                        </button>
                       </div>
                     </div>
-
-                    <button className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
-                      <Icon name="Play" size={20} />
-                      Играть
-                    </button>
                   </div>
                 </div>
               </Card>
