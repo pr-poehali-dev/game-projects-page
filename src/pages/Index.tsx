@@ -57,13 +57,6 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/8b63957a-747a-4053-82bf-2ed0b59b7245.png",
     description: "Современное казино с быстрыми выплатами!",
     color: "from-yellow-400 to-amber-500"
-  },
-  {
-    id: "wealth-wars",
-    name: "Wealth Wars",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
-    description: "Сражайся за богатства в мультиплеер арене!",
-    color: "from-red-400 to-orange-600"
   }
 ];
 
