@@ -19,7 +19,7 @@ const projects = [
   {
     id: "arkada",
     name: "Arcada",
-    logo: "https://cdn.poehali.dev/files/6e7d5a67-83fd-43ba-b7fb-a79a769f453f.jpg",
+    logo: "https://cdn.poehali.dev/files/2d434b68-add2-4147-972c-d47d76f83bf1.png",
     description: "Аркадные игры и слоты с классической атмосферой!",
     color: "from-cyan-400 to-blue-600"
   },
