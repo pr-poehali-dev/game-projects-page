@@ -137,38 +137,6 @@ const Index = () => {
                           <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">{project.name}</h2>
                           <p className="text-base md:text-lg text-amber-200/80">{project.description}</p>
                         </div>
-
-                        <div className="grid grid-cols-3 gap-2 md:gap-4">
-                          <Card className="bg-gradient-to-br from-amber-500/10 to-transparent border-amber-500/30 p-2 md:p-4">
-                            <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-                              <Icon name="Download" className="text-amber-400" size={20} />
-                              <div className="text-center md:text-left">
-                                <div className="text-lg md:text-2xl font-bold text-amber-400">{project.stats.downloads}</div>
-                                <div className="text-[10px] md:text-xs text-amber-200/60">Скачиваний</div>
-                              </div>
-                            </div>
-                          </Card>
-
-                          <Card className="bg-gradient-to-br from-yellow-500/10 to-transparent border-yellow-500/30 p-2 md:p-4">
-                            <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-                              <Icon name="Star" className="text-yellow-400" size={20} />
-                              <div className="text-center md:text-left">
-                                <div className="text-lg md:text-2xl font-bold text-yellow-400">{project.stats.rating}</div>
-                                <div className="text-[10px] md:text-xs text-amber-200/60">Рейтинг</div>
-                              </div>
-                            </div>
-                          </Card>
-
-                          <Card className="bg-gradient-to-br from-green-500/10 to-transparent border-green-500/30 p-2 md:p-4">
-                            <div className="flex flex-col md:flex-row items-center gap-1 md:gap-3">
-                              <Icon name="DollarSign" className="text-green-400" size={20} />
-                              <div className="text-center md:text-left">
-                                <div className="text-lg md:text-2xl font-bold text-green-400">{project.stats.revenue}</div>
-                                <div className="text-[10px] md:text-xs text-amber-200/60">Выручка</div>
-                              </div>
-                            </div>
-                          </Card>
-                        </div>
                       </div>
                     </div>
 
