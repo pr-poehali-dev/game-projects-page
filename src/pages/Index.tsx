@@ -92,12 +92,8 @@ const Index = () => {
           </div>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 bg-[length:200%_auto] animate-shine px-4">
-            Мои Игровые Проекты
+            Игровые проекты
           </h1>
-          
-          <p className="text-base md:text-xl text-amber-200/80 max-w-2xl mx-auto px-4">
-            Портфолио успешных игр о богатстве и криптовалютах
-          </p>
         </div>
 
         <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
