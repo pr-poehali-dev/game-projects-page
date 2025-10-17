@@ -98,23 +98,6 @@ const Index = () => {
           <p className="text-base md:text-xl text-amber-200/80 max-w-2xl mx-auto px-4">
             Портфолио успешных игр о богатстве и криптовалютах
           </p>
-
-          <div className="flex items-center justify-center gap-4 md:gap-8 pt-4 md:pt-6 flex-wrap px-4">
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-amber-400">13.7M+</div>
-              <div className="text-xs md:text-sm text-amber-200/60">Скачиваний</div>
-            </div>
-            <div className="w-px h-10 md:h-12 bg-amber-400/30" />
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-green-400">$2.86M</div>
-              <div className="text-xs md:text-sm text-amber-200/60">Выручка</div>
-            </div>
-            <div className="w-px h-10 md:h-12 bg-amber-400/30" />
-            <div className="text-center">
-              <div className="text-2xl md:text-3xl font-bold text-purple-400">4.76</div>
-              <div className="text-xs md:text-sm text-amber-200/60">Рейтинг</div>
-            </div>
-          </div>
         </div>
 
         <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
