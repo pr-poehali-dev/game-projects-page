@@ -71,6 +71,34 @@ const projects = [
     },
     features: ["Классический геймплей", "Бонусные уровни", "Система достижений"],
     color: "from-yellow-400 to-amber-600"
+  },
+  {
+    id: "nft-legends",
+    name: "NFT Legends",
+    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
+    description: "Коллекционируй уникальные NFT и торгуй на маркетплейсе!",
+    color: "from-blue-400 to-cyan-600"
+  },
+  {
+    id: "money-tycoon",
+    name: "Money Tycoon",
+    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/5de42b16-db68-4828-a08b-1c51b3b55ea7.jpg",
+    description: "Стань финансовым магнатом и построй бизнес-империю!",
+    color: "from-emerald-400 to-teal-600"
+  },
+  {
+    id: "coin-master",
+    name: "Coin Master",
+    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/baa03557-d978-4f65-b40b-43c1298e5b9b.jpg",
+    description: "Крути барабан и зарабатывай криптомонеты!",
+    color: "from-pink-400 to-rose-600"
+  },
+  {
+    id: "wealth-wars",
+    name: "Wealth Wars",
+    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
+    description: "Сражайся за богатства в мультиплеер арене!",
+    color: "from-red-400 to-orange-600"
   }
 ];
 
