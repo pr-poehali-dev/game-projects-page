@@ -122,7 +122,7 @@ const Index = () => {
             <div key={project.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
               <Card className={`bg-gradient-to-br ${project.color} p-1 shadow-2xl border-none hover:scale-[1.02] transition-transform duration-300`}>
                 <div className="bg-[#221F26] rounded-[calc(1rem-4px)] p-4 md:p-8">
-                  <div className="flex flex-col gap-6 md:gap-8">
+                  <div className="flex flex-col gap-4 md:gap-6">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
                       <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl md:rounded-3xl overflow-hidden border-4 border-amber-400/50 shadow-2xl animate-glow flex-shrink-0">
                         <img 
@@ -172,26 +172,7 @@ const Index = () => {
                       </div>
                     </div>
 
-                    <div className="space-y-4">
-                      <div className="bg-[#1A1F2C]/50 rounded-xl p-4 md:p-6 border border-amber-500/20">
-                        <h3 className="text-xl md:text-2xl font-bold text-amber-400 mb-3">Описание</h3>
-                        <p className="text-sm md:text-base text-amber-200/80 leading-relaxed">{project.fullDescription}</p>
-                      </div>
-
-                      <div className="bg-[#1A1F2C]/50 rounded-xl p-4 md:p-6 border border-amber-500/20">
-                        <h3 className="text-xl md:text-2xl font-bold text-amber-400 mb-3">Ключевые особенности</h3>
-                        <ul className="space-y-2">
-                          {project.features.map((feature, featureIndex) => (
-                            <li key={featureIndex} className="flex items-center gap-2 text-sm md:text-base text-amber-200/80">
-                              <Icon name="CheckCircle2" className="text-green-400 flex-shrink-0" size={18} />
-                              <span>{feature}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-
-                    <div className="flex flex-col md:flex-row gap-3 pt-2">
+                    <div className="flex flex-col md:flex-row gap-3">
                       <button className="flex-1 bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
                         <Icon name="Play" size={20} />
                         Играть
