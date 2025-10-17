@@ -1,6 +1,4 @@
-import { useState } from "react";
 import { Card } from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Icon from "@/components/ui/icon";
 
 const projects = [
@@ -77,10 +75,6 @@ const projects = [
 ];
 
 const Index = () => {
-  const [selectedProject, setSelectedProject] = useState(projects[0].id);
-
-  const currentProject = projects.find(p => p.id === selectedProject);
-
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#1A1F2C] via-[#221F26] to-[#1A1F2C] relative overflow-hidden">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(245,158,11,0.1),transparent_50%)]" />
@@ -90,7 +84,7 @@ const Index = () => {
       <div className="absolute top-1/2 left-1/4 w-16 h-16 md:w-24 md:h-24 bg-green-500/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
 
       <div className="relative z-10 container mx-auto px-4 py-6 md:py-12">
-        <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4">
+        <div className="text-center mb-8 md:mb-12 space-y-3 md:space-y-4 sticky top-0 bg-gradient-to-b from-[#1A1F2C] to-transparent pb-6 z-20">
           <div className="inline-flex items-center gap-2 mb-2 md:mb-4">
             <div className="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-amber-400 to-yellow-600 rounded-full flex items-center justify-center animate-glow">
               <Icon name="Trophy" className="text-[#1A1F2C]" size={24} />
@@ -123,29 +117,10 @@ const Index = () => {
           </div>
         </div>
 
-        <Tabs value={selectedProject} onValueChange={setSelectedProject} className="w-full max-w-6xl mx-auto">
-          <TabsList className="grid grid-cols-5 gap-1 md:gap-2 bg-[#221F26]/50 backdrop-blur-sm p-1 md:p-2 mb-6 md:mb-8 border border-amber-500/20 overflow-x-auto">
-            {projects.map((project) => (
-              <TabsTrigger
-                key={project.id}
-                value={project.id}
-                className="flex flex-col items-center gap-1 md:gap-2 p-2 md:p-4 data-[state=active]:bg-gradient-to-br data-[state=active]:from-amber-500/20 data-[state=active]:to-purple-500/20 data-[state=active]:shadow-lg data-[state=active]:shadow-amber-500/50 transition-all duration-300 hover:scale-105 min-w-[60px] md:min-w-0"
-              >
-                <div className="w-10 h-10 md:w-16 md:h-16 rounded-xl md:rounded-2xl overflow-hidden border-2 border-amber-400/50 shadow-lg">
-                  <img 
-                    src={project.logo} 
-                    alt={project.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <span className="text-[10px] md:text-xs font-semibold text-center leading-tight">{project.name}</span>
-              </TabsTrigger>
-            ))}
-          </TabsList>
-
-          {projects.map((project) => (
-            <TabsContent key={project.id} value={project.id} className="mt-0">
-              <Card className={`bg-gradient-to-br ${project.color} p-1 shadow-2xl border-none`}>
+        <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
+          {projects.map((project, index) => (
+            <div key={project.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+              <Card className={`bg-gradient-to-br ${project.color} p-1 shadow-2xl border-none hover:scale-[1.02] transition-transform duration-300`}>
                 <div className="bg-[#221F26] rounded-[calc(1rem-4px)] p-4 md:p-8">
                   <div className="flex flex-col gap-6 md:gap-8">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
@@ -206,8 +181,8 @@ const Index = () => {
                       <div className="bg-[#1A1F2C]/50 rounded-xl p-4 md:p-6 border border-amber-500/20">
                         <h3 className="text-xl md:text-2xl font-bold text-amber-400 mb-3">Ключевые особенности</h3>
                         <ul className="space-y-2">
-                          {project.features.map((feature, index) => (
-                            <li key={index} className="flex items-center gap-2 text-sm md:text-base text-amber-200/80">
+                          {project.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-center gap-2 text-sm md:text-base text-amber-200/80">
                               <Icon name="CheckCircle2" className="text-green-400 flex-shrink-0" size={18} />
                               <span>{feature}</span>
                             </li>
@@ -229,9 +204,9 @@ const Index = () => {
                   </div>
                 </div>
               </Card>
-            </TabsContent>
+            </div>
           ))}
-        </Tabs>
+        </div>
 
         <div className="text-center mt-8 md:mt-12 flex items-center justify-center gap-2 text-amber-200/60 px-4">
           <Icon name="Sparkles" size={18} className="text-amber-400 animate-pulse" />
