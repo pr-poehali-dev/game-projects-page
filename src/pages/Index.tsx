@@ -3,18 +3,11 @@ import Icon from "@/components/ui/icon";
 
 const projects = [
   {
-    id: "crypto-rush",
-    name: "Crypto Rush",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
-    description: "Собирай криптомонеты и становись богаче с каждым уровнем!",
-    fullDescription: "Захватывающая игра, где ты управляешь персонажем, собирающим криптомонеты. Каждый уровень становится сложнее, но и награды больше! Прокачивай своего героя, открывай новые возможности и становись криптомагнатом.",
-    stats: {
-      downloads: "2.5M",
-      rating: 4.8,
-      revenue: "$450K"
-    },
-    features: ["Более 50 уровней", "Система прокачки", "Мультиплеер режим"],
-    color: "from-amber-400 to-yellow-600"
+    id: "1win",
+    name: "1WIN",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Ставки на спорт и казино с лучшими коэффициентами!",
+    color: "from-blue-400 to-cyan-600"
   },
   {
     id: "treasure-quest",
