@@ -124,11 +124,11 @@ const Index = () => {
                 <div className="bg-[#221F26] rounded-[calc(1rem-4px)] p-4 md:p-8">
                   <div className="flex flex-col gap-4 md:gap-6">
                     <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
-                      <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl md:rounded-3xl overflow-hidden border-4 border-amber-400/50 shadow-2xl animate-glow flex-shrink-0">
+                      <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl md:rounded-3xl overflow-hidden border-4 border-amber-400/50 shadow-2xl animate-glow flex-shrink-0 bg-white flex items-center justify-center p-4">
                         <img 
                           src={project.logo} 
                           alt={project.name}
-                          className="w-full h-full object-cover"
+                          className="w-full h-full object-contain"
                         />
                       </div>
 
