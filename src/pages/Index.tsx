@@ -31,18 +31,11 @@ const projects = [
     color: "from-purple-500 to-violet-600"
   },
   {
-    id: "gold-miner",
-    name: "Gold Miner",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/5de42b16-db68-4828-a08b-1c51b3b55ea7.jpg",
-    description: "Добывай золото и становись магнатом!",
-    fullDescription: "Классическая игра в новом обличии! Управляй краном, добывай золото, алмазы и другие ценности. Проходи уровни и становись легендарным золотоискателем.",
-    stats: {
-      downloads: "4.1M",
-      rating: 4.8,
-      revenue: "$890K"
-    },
-    features: ["Классический геймплей", "Бонусные уровни", "Система достижений"],
-    color: "from-yellow-400 to-amber-600"
+    id: "kometa",
+    name: "Kometa",
+    logo: "https://cdn.poehali.dev/files/d4ca76cf-69d8-49b0-d97a-ccf96de73c0b.png",
+    description: "Космическое казино с невероятными призами!",
+    color: "from-indigo-400 to-sky-500"
   },
   {
     id: "nft-legends",
