@@ -38,11 +38,11 @@ const projects = [
     color: "from-indigo-400 to-sky-500"
   },
   {
-    id: "nft-legends",
-    name: "NFT Legends",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/a12d8425-60f7-4992-9def-114ce0739a2d.jpg",
-    description: "Коллекционируй уникальные NFT и торгуй на маркетплейсе!",
-    color: "from-blue-400 to-cyan-600"
+    id: "gama",
+    name: "Gama",
+    logo: "https://cdn.poehali.dev/files/dfa09972-aa26-494e-b0e2-4cb38031c9ed.png",
+    description: "Разнообразие игр с яркими эмоциями и призами!",
+    color: "from-orange-400 to-red-500"
   },
   {
     id: "money-tycoon",
