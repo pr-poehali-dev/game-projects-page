@@ -17,18 +17,11 @@ const projects = [
     color: "from-purple-400 to-pink-600"
   },
   {
-    id: "rocket-fortune",
-    name: "Rocket Fortune",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/baa03557-d978-4f65-b40b-43c1298e5b9b.jpg",
-    description: "Запускай ракету к финансовым высотам!",
-    fullDescription: "Управляй космической ракетой, собирай бонусы и взлетай к новым финансовым вершинам. Чем выше летишь, тем больше зарабатываешь!",
-    stats: {
-      downloads: "3.2M",
-      rating: 4.9,
-      revenue: "$680K"
-    },
-    features: ["Физика полета", "Улучшения ракеты", "Ежедневные турниры"],
-    color: "from-green-400 to-emerald-600"
+    id: "arkada",
+    name: "Arcada",
+    logo: "https://cdn.poehali.dev/files/6e7d5a67-83fd-43ba-b7fb-a79a769f453f.jpg",
+    description: "Аркадные игры и слоты с классической атмосферой!",
+    color: "from-cyan-400 to-blue-600"
   },
   {
     id: "diamond-empire",
