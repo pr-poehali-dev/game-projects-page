@@ -45,11 +45,11 @@ const projects = [
     color: "from-orange-400 to-red-500"
   },
   {
-    id: "money-tycoon",
-    name: "Money Tycoon",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/5de42b16-db68-4828-a08b-1c51b3b55ea7.jpg",
-    description: "Стань финансовым магнатом и построй бизнес-империю!",
-    color: "from-emerald-400 to-teal-600"
+    id: "kent",
+    name: "Kent",
+    logo: "https://cdn.poehali.dev/files/e9af4599-e7af-46cb-b2d5-d51619c23c9e.png",
+    description: "Казино с королевскими бонусами и акциями!",
+    color: "from-pink-500 to-rose-600"
   },
   {
     id: "coin-master",
