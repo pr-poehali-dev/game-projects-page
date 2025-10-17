@@ -52,11 +52,11 @@ const projects = [
     color: "from-pink-500 to-rose-600"
   },
   {
-    id: "coin-master",
-    name: "Coin Master",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/baa03557-d978-4f65-b40b-43c1298e5b9b.jpg",
-    description: "Крути барабан и зарабатывай криптомонеты!",
-    color: "from-pink-400 to-rose-600"
+    id: "r7",
+    name: "R7",
+    logo: "https://cdn.poehali.dev/files/8b63957a-747a-4053-82bf-2ed0b59b7245.png",
+    description: "Современное казино с быстрыми выплатами!",
+    color: "from-yellow-400 to-amber-500"
   },
   {
     id: "wealth-wars",
