@@ -10,18 +10,11 @@ const projects = [
     color: "from-blue-400 to-cyan-600"
   },
   {
-    id: "treasure-quest",
-    name: "Treasure Quest",
-    logo: "https://cdn.poehali.dev/projects/a5109423-fbb4-42a0-b973-502a6e1cbd79/files/5de42b16-db68-4828-a08b-1c51b3b55ea7.jpg",
-    description: "Открывай сундуки с сокровищами и накапливай богатства!",
-    fullDescription: "Исследуй таинственные подземелья, находи легендарные сундуки и собирай невероятные сокровища. Каждый сундук — это новый сюрприз!",
-    stats: {
-      downloads: "1.8M",
-      rating: 4.6,
-      revenue: "$320K"
-    },
-    features: ["100+ типов сундуков", "Редкие артефакты", "Режим приключений"],
-    color: "from-orange-400 to-red-600"
+    id: "catcasino",
+    name: "CatCasino",
+    logo: "https://cdn.poehali.dev/files/1bec4938-fcc6-42e4-8009-033e8d408290.jpg",
+    description: "Онлайн казино с яркими слотами и большими выигрышами!",
+    color: "from-purple-400 to-pink-600"
   },
   {
     id: "rocket-fortune",
