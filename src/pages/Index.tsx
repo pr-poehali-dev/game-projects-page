@@ -7,56 +7,64 @@ const projects = [
     name: "1WIN",
     logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
     description: "Ставки на спорт и казино с лучшими коэффициентами!",
-    color: "from-blue-400 to-cyan-600"
+    color: "from-blue-400 to-cyan-600",
+    link: "https://lknt.pro/76ca"
   },
   {
     id: "catcasino",
     name: "CatCasino",
     logo: "https://cdn.poehali.dev/files/1bec4938-fcc6-42e4-8009-033e8d408290.jpg",
     description: "Онлайн казино с яркими слотами и большими выигрышами!",
-    color: "from-purple-400 to-pink-600"
+    color: "from-purple-400 to-pink-600",
+    link: "https://catchthecatthree.com/sb2510e0d"
   },
   {
     id: "arkada",
     name: "Arcada",
     logo: "https://cdn.poehali.dev/files/2d434b68-add2-4147-972c-d47d76f83bf1.png",
     description: "Аркадные игры и слоты с классической атмосферой!",
-    color: "from-cyan-400 to-blue-600"
+    color: "from-cyan-400 to-blue-600",
+    link: "https://grid-cyberlane.com/s0d74b268"
   },
   {
     id: "daddy",
     name: "Daddy",
     logo: "https://cdn.poehali.dev/files/69490964-7943-4b6e-bac6-d56e19906d8f.png",
     description: "Казино с уникальными бонусами и турнирами!",
-    color: "from-purple-500 to-violet-600"
+    color: "from-purple-500 to-violet-600",
+    link: "https://aeruborony.com/s8fb5e1d2"
   },
   {
     id: "kometa",
     name: "Kometa",
     logo: "https://cdn.poehali.dev/files/9abd4313-2ad0-461f-a8d7-57be2d51aeba.png",
     description: "Космическое казино с невероятными призами!",
-    color: "from-indigo-400 to-sky-500"
+    color: "from-indigo-400 to-sky-500",
+    link: "https://tropical-path.com/sd8ea9f6f"
   },
   {
     id: "gama",
     name: "Gama",
     logo: "https://cdn.poehali.dev/files/dfa09972-aa26-494e-b0e2-4cb38031c9ed.png",
     description: "Разнообразие игр с яркими эмоциями и призами!",
-    color: "from-orange-400 to-red-500"
+    color: "from-orange-400 to-red-500",
+    link: "https://preesiader.com/see130fa1"
   },
   {
     id: "kent",
     name: "Kent",
     logo: "https://cdn.poehali.dev/files/e9af4599-e7af-46cb-b2d5-d51619c23c9e.png",
     description: "Казино с королевскими бонусами и акциями!",
-    color: "from-pink-500 to-rose-600"
+    color: "from-pink-500 to-rose-600",
+    link: "https://mealmenalc.com/s7599a8fb"
   },
   {
     id: "r7",
     name: "R7",
     logo: "https://cdn.poehali.dev/files/8b63957a-747a-4053-82bf-2ed0b59b7245.png",
     description: "Современное казино с быстрыми выплатами!",
-    color: "from-yellow-400 to-amber-500"
+    color: "from-yellow-400 to-amber-500",
+    link: "https://sigreaciry.com/sc7972243"
   }
 ];
 
@@ -106,10 +114,15 @@ const Index = () => {
                           <p className="text-base md:text-lg text-amber-200/80">{project.description}</p>
                         </div>
                         
-                        <button className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
+                        <a 
+                          href={project.link} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2"
+                        >
                           <Icon name="Play" size={20} />
                           Играть
-                        </button>
+                        </a>
                       </div>
                     </div>
                   </div>
