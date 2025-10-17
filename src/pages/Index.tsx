@@ -80,6 +80,9 @@ const Index = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-yellow-500 to-amber-400 bg-[length:200%_auto] animate-shine px-4">
             Игровые проекты
           </h1>
+          <p className="text-lg md:text-xl text-amber-200/80 px-4">
+            Постоянный доступ ко всем платформам!
+          </p>
         </div>
 
         <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
