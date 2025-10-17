@@ -33,7 +33,7 @@ const projects = [
   {
     id: "kometa",
     name: "Kometa",
-    logo: "https://cdn.poehali.dev/files/d4ca76cf-69d8-49b0-d97a-ccf96de73c0b.png",
+    logo: "https://cdn.poehali.dev/files/9abd4313-2ad0-461f-a8d7-57be2d51aeba.png",
     description: "Космическое казино с невероятными призами!",
     color: "from-indigo-400 to-sky-500"
   },
