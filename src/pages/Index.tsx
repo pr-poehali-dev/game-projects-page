@@ -172,16 +172,10 @@ const Index = () => {
                       </div>
                     </div>
 
-                    <div className="flex flex-col md:flex-row gap-3">
-                      <button className="flex-1 bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
-                        <Icon name="Play" size={20} />
-                        Играть
-                      </button>
-                      <button className="flex-1 bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-purple-500/50 flex items-center justify-center gap-2">
-                        <Icon name="Info" size={20} />
-                        Подробнее
-                      </button>
-                    </div>
+                    <button className="w-full bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-6 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2">
+                      <Icon name="Play" size={20} />
+                      Играть
+                    </button>
                   </div>
                 </div>
               </Card>
