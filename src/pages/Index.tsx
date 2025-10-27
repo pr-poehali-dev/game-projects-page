@@ -35,9 +35,9 @@ const projects = [
     link: "#"
   },
   {
-    id: "drip",
-    name: "Drip",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    id: "martin",
+    name: "Martin",
+    logo: "https://cdn.poehali.dev/files/31c45e7b-bd3d-4b53-a3f0-4a9eafb98f5f.jpg",
     description: "Современное казино с эксклюзивными слотами!",
     color: "from-sky-400 to-indigo-600",
     link: "#"
