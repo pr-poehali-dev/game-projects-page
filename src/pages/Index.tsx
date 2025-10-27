@@ -99,9 +99,9 @@ const projects = [
     link: "https://sigreaciry.com/sc7972243"
   },
   {
-    id: "legzo",
-    name: "Legzo",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    id: "irwin",
+    name: "Irwin",
+    logo: "https://cdn.poehali.dev/files/497df762-02f8-459c-bbbf-5d2954900d60.png",
     description: "Легендарное казино с классическими играми!",
     color: "from-lime-400 to-green-600",
     link: "#"
