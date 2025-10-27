@@ -16,7 +16,7 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
     description: "Ставки на спорт и казино с лучшими коэффициентами!",
     color: "from-blue-400 to-cyan-600",
-    link: "https://lknt.pro/76ca"
+    link: "https://beef-way-two.com/cbd4a6877"
   },
   {
     id: "catcasino",
@@ -40,7 +40,7 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/31c45e7b-bd3d-4b53-a3f0-4a9eafb98f5f.jpg",
     description: "Современное казино с эксклюзивными слотами!",
     color: "from-sky-400 to-indigo-600",
-    link: "#"
+    link: "https://martin-way-six.com/c1d2be77a"
   },
   {
     id: "gizbo",
@@ -48,7 +48,7 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/a6b5babb-ffa0-473d-96ba-766ed448489a.png",
     description: "Звездное казино с высокими выплатами!",
     color: "from-violet-400 to-purple-600",
-    link: "#"
+    link: "https://gizbo-way-seven.com/cc464af47"
   },
   {
     id: "arkada",
@@ -104,7 +104,7 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/497df762-02f8-459c-bbbf-5d2954900d60.png",
     description: "Легендарное казино с классическими играми!",
     color: "from-lime-400 to-green-600",
-    link: "#"
+    link: "https://irwin-way-one.com/c2fe5ee5e"
   }
 ];
 
