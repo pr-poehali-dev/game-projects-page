@@ -27,9 +27,9 @@ const projects = [
     link: "https://catchthecatthree.com/sb2510e0d"
   },
   {
-    id: "pokerdom",
-    name: "Pokerdom",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    id: "dragon",
+    name: "Dragon Money",
+    logo: "https://cdn.poehali.dev/files/2d54a1e1-ce98-4102-9df9-ef86d278859a.png",
     description: "Покер-рум с крупными турнирами и призами!",
     color: "from-red-400 to-orange-600",
     link: "#"
