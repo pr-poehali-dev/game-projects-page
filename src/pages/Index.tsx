@@ -3,9 +3,9 @@ import Icon from "@/components/ui/icon";
 
 const projects = [
   {
-    id: "vavada",
-    name: "Vavada",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    id: "beef",
+    name: "Beef",
+    logo: "https://cdn.poehali.dev/files/2836e161-4104-48b2-8278-fdbc4decf1c9.jpg",
     description: "Популярное казино с щедрыми бонусами!",
     color: "from-emerald-400 to-teal-600",
     link: "#"
