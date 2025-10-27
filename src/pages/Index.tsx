@@ -131,6 +131,9 @@ const Index = () => {
           <p className="text-lg md:text-xl text-amber-200/80 px-4">
             Постоянный доступ ко всем платформам!
           </p>
+          <p className="text-sm md:text-base text-amber-300/70 px-4">
+            Запоминай ссылку 3cas.com что б не потерять!
+          </p>
         </div>
 
         <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
