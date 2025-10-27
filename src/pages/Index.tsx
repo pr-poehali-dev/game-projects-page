@@ -5,7 +5,7 @@ const projects = [
   {
     id: "beef",
     name: "Beef",
-    logo: "https://cdn.poehali.dev/files/2836e161-4104-48b2-8278-fdbc4decf1c9.jpg",
+    logo: "https://cdn.poehali.dev/files/d67fe764-e1c5-47d8-af5f-f422c3bab1ab.png",
     description: "Популярное казино с щедрыми бонусами!",
     color: "from-emerald-400 to-teal-600",
     link: "#"
