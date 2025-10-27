@@ -1,72 +1,122 @@
 import { Card } from "@/components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Icon from "@/components/ui/icon";
 
-const projects = [
-  {
-    id: "1win",
-    name: "1WIN",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
-    description: "Ставки на спорт и казино с лучшими коэффициентами!",
-    color: "from-blue-400 to-cyan-600",
-    link: "https://lknt.pro/76ca"
-  },
-  {
-    id: "catcasino",
-    name: "CatCasino",
-    logo: "https://cdn.poehali.dev/files/1bec4938-fcc6-42e4-8009-033e8d408290.jpg",
-    description: "Онлайн казино с яркими слотами и большими выигрышами!",
-    color: "from-purple-400 to-pink-600",
-    link: "https://catchthecatthree.com/sb2510e0d"
-  },
-  {
-    id: "arkada",
-    name: "Arcada",
-    logo: "https://cdn.poehali.dev/files/2d434b68-add2-4147-972c-d47d76f83bf1.png",
-    description: "Аркадные игры и слоты с классической атмосферой!",
-    color: "from-cyan-400 to-blue-600",
-    link: "https://grid-cyberlane.com/s0d74b268"
-  },
-  {
-    id: "daddy",
-    name: "Daddy",
-    logo: "https://cdn.poehali.dev/files/69490964-7943-4b6e-bac6-d56e19906d8f.png",
-    description: "Казино с уникальными бонусами и турнирами!",
-    color: "from-purple-500 to-violet-600",
-    link: "https://aeruborony.com/s8fb5e1d2"
-  },
-  {
-    id: "kometa",
-    name: "Kometa",
-    logo: "https://cdn.poehali.dev/files/9abd4313-2ad0-461f-a8d7-57be2d51aeba.png",
-    description: "Космическое казино с невероятными призами!",
-    color: "from-indigo-400 to-sky-500",
-    link: "https://tropical-path.com/sd8ea9f6f"
-  },
-  {
-    id: "gama",
-    name: "Gama",
-    logo: "https://cdn.poehali.dev/files/dfa09972-aa26-494e-b0e2-4cb38031c9ed.png",
-    description: "Разнообразие игр с яркими эмоциями и призами!",
-    color: "from-orange-400 to-red-500",
-    link: "https://preesiader.com/see130fa1"
-  },
-  {
-    id: "kent",
-    name: "Kent",
-    logo: "https://cdn.poehali.dev/files/e9af4599-e7af-46cb-b2d5-d51619c23c9e.png",
-    description: "Казино с королевскими бонусами и акциями!",
-    color: "from-pink-500 to-rose-600",
-    link: "https://mealmenalc.com/s7599a8fb"
-  },
-  {
-    id: "r7",
-    name: "R7",
-    logo: "https://cdn.poehali.dev/files/8b63957a-747a-4053-82bf-2ed0b59b7245.png",
-    description: "Современное казино с быстрыми выплатами!",
-    color: "from-yellow-400 to-amber-500",
-    link: "https://sigreaciry.com/sc7972243"
-  }
-];
+const projectsByCategory = {
+  featured: [
+    {
+      id: "1win",
+      name: "1WIN",
+      logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+      description: "Ставки на спорт и казино с лучшими коэффициентами!",
+      color: "from-blue-400 to-cyan-600",
+      link: "https://lknt.pro/76ca"
+    }
+  ],
+  popular: [
+    {
+      id: "catcasino",
+      name: "CatCasino",
+      logo: "https://cdn.poehali.dev/files/1bec4938-fcc6-42e4-8009-033e8d408290.jpg",
+      description: "Онлайн казино с яркими слотами и большими выигрышами!",
+      color: "from-purple-400 to-pink-600",
+      link: "https://catchthecatthree.com/sb2510e0d"
+    }
+  ],
+  slots: [
+    {
+      id: "arkada",
+      name: "Arcada",
+      logo: "https://cdn.poehali.dev/files/2d434b68-add2-4147-972c-d47d76f83bf1.png",
+      description: "Аркадные игры и слоты с классической атмосферой!",
+      color: "from-cyan-400 to-blue-600",
+      link: "https://grid-cyberlane.com/s0d74b268"
+    },
+    {
+      id: "daddy",
+      name: "Daddy",
+      logo: "https://cdn.poehali.dev/files/69490964-7943-4b6e-bac6-d56e19906d8f.png",
+      description: "Казино с уникальными бонусами и турнирами!",
+      color: "from-purple-500 to-violet-600",
+      link: "https://aeruborony.com/s8fb5e1d2"
+    },
+    {
+      id: "kometa",
+      name: "Kometa",
+      logo: "https://cdn.poehali.dev/files/9abd4313-2ad0-461f-a8d7-57be2d51aeba.png",
+      description: "Космическое казино с невероятными призами!",
+      color: "from-indigo-400 to-sky-500",
+      link: "https://tropical-path.com/sd8ea9f6f"
+    }
+  ],
+  casino: [
+    {
+      id: "gama",
+      name: "Gama",
+      logo: "https://cdn.poehali.dev/files/dfa09972-aa26-494e-b0e2-4cb38031c9ed.png",
+      description: "Разнообразие игр с яркими эмоциями и призами!",
+      color: "from-orange-400 to-red-500",
+      link: "https://preesiader.com/see130fa1"
+    },
+    {
+      id: "kent",
+      name: "Kent",
+      logo: "https://cdn.poehali.dev/files/e9af4599-e7af-46cb-b2d5-d51619c23c9e.png",
+      description: "Казино с королевскими бонусами и акциями!",
+      color: "from-pink-500 to-rose-600",
+      link: "https://mealmenalc.com/s7599a8fb"
+    },
+    {
+      id: "r7",
+      name: "R7",
+      logo: "https://cdn.poehali.dev/files/8b63957a-747a-4053-82bf-2ed0b59b7245.png",
+      description: "Современное казино с быстрыми выплатами!",
+      color: "from-yellow-400 to-amber-500",
+      link: "https://sigreaciry.com/sc7972243"
+    }
+  ]
+};
+
+const renderProjects = (projects: typeof projectsByCategory.featured) => (
+  <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
+    {projects.map((project, index) => (
+      <div key={project.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
+        <Card className={`bg-gradient-to-br ${project.color} p-1 shadow-2xl border-none hover:scale-[1.02] transition-transform duration-300`}>
+          <div className="bg-[#221F26] rounded-[calc(1rem-4px)] p-4 md:p-8">
+            <div className="flex flex-col gap-4 md:gap-6">
+              <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
+                <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl md:rounded-3xl overflow-hidden border-4 border-amber-400/50 shadow-2xl animate-glow flex-shrink-0 bg-white flex items-center justify-center p-4">
+                  <img 
+                    src={project.logo} 
+                    alt={project.name}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+
+                <div className="flex-1 space-y-4 md:space-y-6 w-full flex flex-col justify-between">
+                  <div className="text-center md:text-left">
+                    <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">{project.name}</h2>
+                    <p className="text-base md:text-lg text-amber-200/80">{project.description}</p>
+                  </div>
+                  
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2"
+                  >
+                    <Icon name="Play" size={20} />
+                    Играть
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Card>
+      </div>
+    ))}
+  </div>
+);
 
 const Index = () => {
   return (
@@ -93,44 +143,54 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="w-full max-w-6xl mx-auto space-y-8 md:space-y-12">
-          {projects.map((project, index) => (
-            <div key={project.id} className="animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-              <Card className={`bg-gradient-to-br ${project.color} p-1 shadow-2xl border-none hover:scale-[1.02] transition-transform duration-300`}>
-                <div className="bg-[#221F26] rounded-[calc(1rem-4px)] p-4 md:p-8">
-                  <div className="flex flex-col gap-4 md:gap-6">
-                    <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-center md:items-start">
-                      <div className="w-32 h-32 md:w-48 md:h-48 rounded-2xl md:rounded-3xl overflow-hidden border-4 border-amber-400/50 shadow-2xl animate-glow flex-shrink-0 bg-white flex items-center justify-center p-4">
-                        <img 
-                          src={project.logo} 
-                          alt={project.name}
-                          className="w-full h-full object-contain"
-                        />
-                      </div>
+        <Tabs defaultValue="featured" className="w-full max-w-6xl mx-auto">
+          <TabsList className="w-full mb-8 md:mb-12 bg-[#221F26]/80 backdrop-blur-sm border border-amber-400/20 p-2 h-auto flex-wrap gap-2">
+            <TabsTrigger 
+              value="featured" 
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-yellow-600 data-[state=active]:text-[#1A1F2C] text-amber-200 font-semibold px-6 py-3 rounded-lg transition-all"
+            >
+              <Icon name="Star" size={18} className="mr-2" />
+              Избранное
+            </TabsTrigger>
+            <TabsTrigger 
+              value="popular" 
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-yellow-600 data-[state=active]:text-[#1A1F2C] text-amber-200 font-semibold px-6 py-3 rounded-lg transition-all"
+            >
+              <Icon name="TrendingUp" size={18} className="mr-2" />
+              Популярное
+            </TabsTrigger>
+            <TabsTrigger 
+              value="slots" 
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-yellow-600 data-[state=active]:text-[#1A1F2C] text-amber-200 font-semibold px-6 py-3 rounded-lg transition-all"
+            >
+              <Icon name="Gamepad2" size={18} className="mr-2" />
+              Слоты
+            </TabsTrigger>
+            <TabsTrigger 
+              value="casino" 
+              className="data-[state=active]:bg-gradient-to-r data-[state=active]:from-amber-500 data-[state=active]:to-yellow-600 data-[state=active]:text-[#1A1F2C] text-amber-200 font-semibold px-6 py-3 rounded-lg transition-all"
+            >
+              <Icon name="Sparkles" size={18} className="mr-2" />
+              Казино
+            </TabsTrigger>
+          </TabsList>
 
-                      <div className="flex-1 space-y-4 md:space-y-6 w-full flex flex-col justify-between">
-                        <div className="text-center md:text-left">
-                          <h2 className="text-3xl md:text-4xl font-bold text-amber-400 mb-2">{project.name}</h2>
-                          <p className="text-base md:text-lg text-amber-200/80">{project.description}</p>
-                        </div>
-                        
-                        <a 
-                          href={project.link} 
-                          target="_blank" 
-                          rel="noopener noreferrer"
-                          className="w-full md:w-auto bg-gradient-to-r from-amber-500 to-yellow-600 hover:from-amber-600 hover:to-yellow-700 text-[#1A1F2C] font-bold py-3 px-8 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-amber-500/50 flex items-center justify-center gap-2"
-                        >
-                          <Icon name="Play" size={20} />
-                          Играть
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-            </div>
-          ))}
-        </div>
+          <TabsContent value="featured" className="mt-0">
+            {renderProjects(projectsByCategory.featured)}
+          </TabsContent>
+
+          <TabsContent value="popular" className="mt-0">
+            {renderProjects(projectsByCategory.popular)}
+          </TabsContent>
+
+          <TabsContent value="slots" className="mt-0">
+            {renderProjects(projectsByCategory.slots)}
+          </TabsContent>
+
+          <TabsContent value="casino" className="mt-0">
+            {renderProjects(projectsByCategory.casino)}
+          </TabsContent>
+        </Tabs>
 
 
       </div>
