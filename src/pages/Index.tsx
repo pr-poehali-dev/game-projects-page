@@ -3,6 +3,14 @@ import Icon from "@/components/ui/icon";
 
 const projects = [
   {
+    id: "vavada",
+    name: "Vavada",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Популярное казино с щедрыми бонусами!",
+    color: "from-emerald-400 to-teal-600",
+    link: "#"
+  },
+  {
     id: "1win",
     name: "1WIN",
     logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
@@ -17,6 +25,30 @@ const projects = [
     description: "Онлайн казино с яркими слотами и большими выигрышами!",
     color: "from-purple-400 to-pink-600",
     link: "https://catchthecatthree.com/sb2510e0d"
+  },
+  {
+    id: "pokerdom",
+    name: "Pokerdom",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Покер-рум с крупными турнирами и призами!",
+    color: "from-red-400 to-orange-600",
+    link: "#"
+  },
+  {
+    id: "drip",
+    name: "Drip",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Современное казино с эксклюзивными слотами!",
+    color: "from-sky-400 to-indigo-600",
+    link: "#"
+  },
+  {
+    id: "starda",
+    name: "Starda",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Звездное казино с высокими выплатами!",
+    color: "from-violet-400 to-purple-600",
+    link: "#"
   },
   {
     id: "arkada",
@@ -65,6 +97,14 @@ const projects = [
     description: "Современное казино с быстрыми выплатами!",
     color: "from-yellow-400 to-amber-500",
     link: "https://sigreaciry.com/sc7972243"
+  },
+  {
+    id: "legzo",
+    name: "Legzo",
+    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    description: "Легендарное казино с классическими играми!",
+    color: "from-lime-400 to-green-600",
+    link: "#"
   }
 ];
 
