@@ -75,9 +75,9 @@ const projects = [
     link: "https://tropical-path.com/sd8ea9f6f"
   },
   {
-    id: "dragon",
-    name: "Dragon Money",
-    logo: "https://cdn.poehali.dev/files/450e71e8-e297-4bbf-adc2-b2f2420070f9.png",
+    id: "gama",
+    name: "Gama",
+    logo: "https://cdn.poehali.dev/files/dfa09972-aa26-494e-b0e2-4cb38031c9ed.png",
     description: "Разнообразие игр с яркими эмоциями и призами!",
     color: "from-orange-400 to-red-500",
     link: "https://preesiader.com/see130fa1"
