@@ -8,7 +8,7 @@ const projects = [
     logo: "https://cdn.poehali.dev/files/d67fe764-e1c5-47d8-af5f-f422c3bab1ab.png",
     description: "Новое казино с щедрыми бонусами и уникальными слотами!",
     color: "from-emerald-400 to-teal-600",
-    link: "#"
+    link: "https://beef-way-two.com/cbd4a6877"
   },
   {
     id: "1win",
