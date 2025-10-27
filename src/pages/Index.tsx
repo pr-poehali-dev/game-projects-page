@@ -43,9 +43,9 @@ const projects = [
     link: "#"
   },
   {
-    id: "starda",
-    name: "Starda",
-    logo: "https://cdn.poehali.dev/files/8f1f5619-65c6-401b-b9d7-a97c5ea0d1d9.png",
+    id: "gizbo",
+    name: "Gizbo",
+    logo: "https://cdn.poehali.dev/files/a6b5babb-ffa0-473d-96ba-766ed448489a.png",
     description: "Звездное казино с высокими выплатами!",
     color: "from-violet-400 to-purple-600",
     link: "#"
